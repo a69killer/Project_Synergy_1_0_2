@@ -1,0 +1,911 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local _102 = Instance.new("Frame")
+local Task = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Home = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local Auto_Parry = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local Clash = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local Home_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local Text = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Blade_Ball = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Kat = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local MM2 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local AutoParry = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local Text_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Category_Title = Instance.new("TextLabel")
+local Auto_Parry_Main = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Auto_Parry_Code = Instance.new("TextButton")
+local Vizualizer = Instance.new("TextButton")
+local Status = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Stats = Instance.new("TextLabel")
+local Vizualizer_Status = Instance.new("TextLabel")
+local Clash_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local Text_3 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local Category_Title_2 = Instance.new("TextLabel")
+local Clash_Main = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local Pc_Clash = Instance.new("TextButton")
+local Mob_Clash = Instance.new("TextButton")
+local Stats2 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Stats4 = Instance.new("TextLabel")
+local Mob_Status = Instance.new("TextLabel")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Mob_Clash.Active = true
+Mob_Clash.Draggable = true
+
+_102.Name = "1.0.2"
+_102.Parent = Main
+_102.AnchorPoint = Vector2.new(0.5, 0.5)
+_102.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_102.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_102.BorderSizePixel = 0
+_102.Position = UDim2.new(0.5, 0, 0.5, 0)
+_102.Size = UDim2.new(0, 451, 0, 492)
+
+Task.Name = "Task"
+Task.Parent = _102
+Task.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Task.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Task.BorderSizePixel = 0
+Task.Position = UDim2.new(0, 0, 0.121951222, 0)
+Task.Size = UDim2.new(0, 95, 0, 432)
+
+UICorner.Parent = Task
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 15))}
+UIGradient.Parent = Task
+
+Home.Name = "Home"
+Home.Parent = Task
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 95, 0, 50)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_2.Parent = Home
+
+Auto_Parry.Name = "Auto_Parry"
+Auto_Parry.Parent = Task
+Auto_Parry.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto_Parry.BackgroundTransparency = 1.000
+Auto_Parry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto_Parry.BorderSizePixel = 0
+Auto_Parry.Position = UDim2.new(0, 0, 0.115740739, 0)
+Auto_Parry.Size = UDim2.new(0, 95, 0, 50)
+Auto_Parry.Font = Enum.Font.SourceSansBold
+Auto_Parry.Text = "Auto Parry"
+Auto_Parry.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto_Parry.TextScaled = true
+Auto_Parry.TextSize = 14.000
+Auto_Parry.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_3.Parent = Auto_Parry
+
+Clash.Name = "Clash"
+Clash.Parent = Task
+Clash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clash.BackgroundTransparency = 1.000
+Clash.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clash.BorderSizePixel = 0
+Clash.Position = UDim2.new(0, 0, 0.231481478, 0)
+Clash.Size = UDim2.new(0, 95, 0, 50)
+Clash.Font = Enum.Font.SourceSansBold
+Clash.Text = "Clash"
+Clash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clash.TextScaled = true
+Clash.TextSize = 14.000
+Clash.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_4.Parent = Clash
+
+TextLabel.Parent = _102
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0133037698, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 171, 0, 52)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Project Synergy"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_5.Parent = TextLabel
+
+UICorner_2.Parent = _102
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_6.Parent = _102
+
+Home_2.Name = "Home"
+Home_2.Parent = _102
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home_2.BorderSizePixel = 0
+Home_2.Position = UDim2.new(0.243902445, 0, 0.121951222, 0)
+Home_2.Size = UDim2.new(0, 335, 0, 423)
+
+UICorner_3.Parent = Home_2
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+UIGradient_7.Parent = Home_2
+
+Text.Name = "Text"
+Text.Parent = Home_2
+Text.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.0656716451, 0, 0.0803782493, 0)
+Text.Size = UDim2.new(0, 291, 0, 52)
+
+UICorner_4.Parent = Text
+
+TextLabel_2.Parent = Text
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.15463917, 0, 0.0192307699, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Games Supported:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Blade_Ball.Name = "Blade_Ball"
+Blade_Ball.Parent = Home_2
+Blade_Ball.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Blade_Ball.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Blade_Ball.BorderSizePixel = 0
+Blade_Ball.Position = UDim2.new(0.0656716451, 0, 0.267139494, 0)
+Blade_Ball.Size = UDim2.new(0, 142, 0, 140)
+
+UICorner_5.Parent = Blade_Ball
+
+TextLabel_3.Parent = Blade_Ball
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.12586239, 0, -0.00556252198, 0)
+TextLabel_3.Size = UDim2.new(0, 103, 0, 38)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Blade Ball"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Blade_Ball
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.000898334314, 0, 0.265866101, 0)
+TextLabel_4.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Auto Parry"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Blade_Ball
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-0.000898334314, 0, 0.515866101, 0)
+TextLabel_5.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Toggle Clash"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Blade_Ball
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(-0.000898334314, 0, 0.744437516, 0)
+TextLabel_6.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Vizualizer"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Kat.Name = "Kat"
+Kat.Parent = Home_2
+Kat.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Kat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kat.BorderSizePixel = 0
+Kat.Position = UDim2.new(0.579104483, 0, 0.267139494, 0)
+Kat.Size = UDim2.new(0, 119, 0, 231)
+
+UICorner_6.Parent = Kat
+
+TextLabel_7.Parent = Kat
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0670386553, 0, -0.00556240557, 0)
+TextLabel_7.Size = UDim2.new(0, 103, 0, 38)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Kat"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Kat
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(-0.000898088736, 0, 0.196602032, 0)
+TextLabel_8.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "Trigger Aimbot"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = Kat
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(-0.000898088736, 0, 0.368679941, 0)
+TextLabel_9.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "Esp"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = Kat
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-0.000898088736, 0, 0.519329369, 0)
+TextLabel_10.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "Silent Aim"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Kat
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(-0.000898088736, 0, 0.670844555, 0)
+TextLabel_11.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Speed"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = Kat
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(-0.000898088736, 0, 0.822359681, 0)
+TextLabel_12.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "Auto farm"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+MM2.Name = "MM2"
+MM2.Parent = Home_2
+MM2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MM2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MM2.BorderSizePixel = 0
+MM2.Position = UDim2.new(0.0656716451, 0, 0.676122904, 0)
+MM2.Size = UDim2.new(0, 142, 0, 109)
+
+UICorner_7.Parent = MM2
+
+TextLabel_13.Parent = MM2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0, -0.00556259835, 0)
+TextLabel_13.Size = UDim2.new(0, 141, 0, 38)
+TextLabel_13.Font = Enum.Font.SourceSansBold
+TextLabel_13.Text = "Murder Mystery 2"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = MM2
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(-0.000898002414, 0, 0.334216744, 0)
+TextLabel_14.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_14.Font = Enum.Font.SourceSansBold
+TextLabel_14.Text = "Speed"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = MM2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(-0.00794015825, 0, 0.655317664, 0)
+TextLabel_15.Size = UDim2.new(0, 83, 0, 35)
+TextLabel_15.Font = Enum.Font.SourceSansBold
+TextLabel_15.Text = "Esp"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = _102
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+AutoParry.Name = "AutoParry"
+AutoParry.Parent = _102
+AutoParry.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoParry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoParry.BorderSizePixel = 0
+AutoParry.Position = UDim2.new(0.243902445, 0, 0.121951222, 0)
+AutoParry.Size = UDim2.new(0, 335, 0, 423)
+AutoParry.Visible = false
+
+UICorner_8.Parent = AutoParry
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+UIGradient_8.Parent = AutoParry
+
+Text_2.Name = "Text"
+Text_2.Parent = AutoParry
+Text_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_2.BorderSizePixel = 0
+Text_2.Position = UDim2.new(0.0656716451, 0, 0.0803782493, 0)
+Text_2.Size = UDim2.new(0, 291, 0, 52)
+
+UICorner_9.Parent = Text_2
+
+Category_Title.Name = "Category_Title"
+Category_Title.Parent = Text_2
+Category_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Category_Title.BackgroundTransparency = 1.000
+Category_Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Category_Title.BorderSizePixel = 0
+Category_Title.Position = UDim2.new(0.15463917, 0, 0.0192307699, 0)
+Category_Title.Size = UDim2.new(0, 200, 0, 50)
+Category_Title.Font = Enum.Font.SourceSansBold
+Category_Title.Text = "Auto Parry"
+Category_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Category_Title.TextScaled = true
+Category_Title.TextSize = 14.000
+Category_Title.TextWrapped = true
+
+Auto_Parry_Main.Name = "Auto_Parry_Main"
+Auto_Parry_Main.Parent = AutoParry
+Auto_Parry_Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Auto_Parry_Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto_Parry_Main.BorderSizePixel = 0
+Auto_Parry_Main.Position = UDim2.new(0.0656716451, 0, 0.267139494, 0)
+Auto_Parry_Main.Size = UDim2.new(0, 121, 0, 145)
+
+UICorner_10.Parent = Auto_Parry_Main
+
+Auto_Parry_Code.Name = "Auto_Parry_Code"
+Auto_Parry_Code.Parent = Auto_Parry_Main
+Auto_Parry_Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto_Parry_Code.BackgroundTransparency = 1.000
+Auto_Parry_Code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto_Parry_Code.BorderSizePixel = 0
+Auto_Parry_Code.Position = UDim2.new(0.0661156997, 0, 0, 0)
+Auto_Parry_Code.Size = UDim2.new(0, 103, 0, 44)
+Auto_Parry_Code.Font = Enum.Font.SourceSansBold
+Auto_Parry_Code.Text = "Auto Parry"
+Auto_Parry_Code.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto_Parry_Code.TextScaled = true
+Auto_Parry_Code.TextSize = 14.000
+Auto_Parry_Code.TextWrapped = true
+
+Vizualizer.Name = "Vizualizer"
+Vizualizer.Parent = Auto_Parry_Main
+Vizualizer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vizualizer.BackgroundTransparency = 1.000
+Vizualizer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Vizualizer.BorderSizePixel = 0
+Vizualizer.Position = UDim2.new(0.0661156997, 0, 0.298521042, 0)
+Vizualizer.Size = UDim2.new(0, 103, 0, 44)
+Vizualizer.Font = Enum.Font.SourceSansBold
+Vizualizer.Text = "Vizualizer (soon)"
+Vizualizer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vizualizer.TextScaled = true
+Vizualizer.TextSize = 14.000
+Vizualizer.TextWrapped = true
+
+Status.Name = "Status"
+Status.Parent = Auto_Parry_Main
+Status.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status.BorderSizePixel = 0
+Status.Position = UDim2.new(1.08257103, 0, 0, 0)
+Status.Size = UDim2.new(0, 160, 0, 295)
+
+UICorner_11.Parent = Status
+
+Stats.Name = "Stats"
+Stats.Parent = Status
+Stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stats.BackgroundTransparency = 1.000
+Stats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stats.BorderSizePixel = 0
+Stats.Position = UDim2.new(-0.00233849813, 0, -0.000636827084, 0)
+Stats.Size = UDim2.new(0, 159, 0, 37)
+Stats.Font = Enum.Font.SourceSansBold
+Stats.Text = ""
+Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stats.TextScaled = true
+Stats.TextSize = 14.000
+Stats.TextWrapped = true
+
+Vizualizer_Status.Name = "Vizualizer_Status"
+Vizualizer_Status.Parent = Status
+Vizualizer_Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vizualizer_Status.BackgroundTransparency = 1.000
+Vizualizer_Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Vizualizer_Status.BorderSizePixel = 0
+Vizualizer_Status.Position = UDim2.new(-0.00233840942, 0, 0.148515701, 0)
+Vizualizer_Status.Size = UDim2.new(0, 159, 0, 37)
+Vizualizer_Status.Font = Enum.Font.SourceSansBold
+Vizualizer_Status.Text = "..."
+Vizualizer_Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vizualizer_Status.TextScaled = true
+Vizualizer_Status.TextSize = 14.000
+Vizualizer_Status.TextWrapped = true
+
+Clash_2.Name = "Clash"
+Clash_2.Parent = _102
+Clash_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clash_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clash_2.BorderSizePixel = 0
+Clash_2.Position = UDim2.new(0.243902445, 0, 0.121951222, 0)
+Clash_2.Size = UDim2.new(0, 335, 0, 423)
+Clash_2.Visible = false
+
+UICorner_12.Parent = Clash_2
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+UIGradient_9.Parent = Clash_2
+
+Text_3.Name = "Text"
+Text_3.Parent = Clash_2
+Text_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Text_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_3.BorderSizePixel = 0
+Text_3.Position = UDim2.new(0.0656716451, 0, 0.0803782493, 0)
+Text_3.Size = UDim2.new(0, 291, 0, 52)
+
+UICorner_13.Parent = Text_3
+
+Category_Title_2.Name = "Category_Title"
+Category_Title_2.Parent = Text_3
+Category_Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Category_Title_2.BackgroundTransparency = 1.000
+Category_Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Category_Title_2.BorderSizePixel = 0
+Category_Title_2.Position = UDim2.new(0.15463917, 0, 0.0192307699, 0)
+Category_Title_2.Size = UDim2.new(0, 200, 0, 50)
+Category_Title_2.Font = Enum.Font.SourceSansBold
+Category_Title_2.Text = "Clash"
+Category_Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Category_Title_2.TextScaled = true
+Category_Title_2.TextSize = 14.000
+Category_Title_2.TextWrapped = true
+
+Clash_Main.Name = "Clash_Main"
+Clash_Main.Parent = Clash_2
+Clash_Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Clash_Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clash_Main.BorderSizePixel = 0
+Clash_Main.Position = UDim2.new(0.0656716451, 0, 0.267139494, 0)
+Clash_Main.Size = UDim2.new(0, 121, 0, 145)
+
+UICorner_14.Parent = Clash_Main
+
+Pc_Clash.Name = "Pc_Clash"
+Pc_Clash.Parent = Clash_Main
+Pc_Clash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pc_Clash.BackgroundTransparency = 1.000
+Pc_Clash.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Pc_Clash.BorderSizePixel = 0
+Pc_Clash.Position = UDim2.new(0.0661156997, 0, 0, 0)
+Pc_Clash.Size = UDim2.new(0, 103, 0, 44)
+Pc_Clash.Font = Enum.Font.SourceSansBold
+Pc_Clash.Text = "Toggle Clash"
+Pc_Clash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pc_Clash.TextScaled = true
+Pc_Clash.TextSize = 14.000
+Pc_Clash.TextWrapped = true
+
+Mob_Clash.Name = "Mob_Clash"
+Mob_Clash.Parent = Clash_Main
+Mob_Clash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mob_Clash.BackgroundTransparency = 1.000
+Mob_Clash.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mob_Clash.BorderSizePixel = 0
+Mob_Clash.Position = UDim2.new(0.0661156997, 0, 0.298521042, 0)
+Mob_Clash.Size = UDim2.new(0, 103, 0, 44)
+Mob_Clash.Font = Enum.Font.SourceSansBold
+Mob_Clash.Text = "Toggle Clash (Mobile)"
+Mob_Clash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mob_Clash.TextScaled = true
+Mob_Clash.TextSize = 14.000
+Mob_Clash.TextWrapped = true
+
+Stats2.Name = "Stats2"
+Stats2.Parent = Clash_Main
+Stats2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Stats2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stats2.BorderSizePixel = 0
+Stats2.Position = UDim2.new(1.08257103, 0, 0, 0)
+Stats2.Size = UDim2.new(0, 160, 0, 295)
+
+UICorner_15.Parent = Stats2
+
+Stats4.Name = "Stats4"
+Stats4.Parent = Stats2
+Stats4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stats4.BackgroundTransparency = 1.000
+Stats4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stats4.BorderSizePixel = 0
+Stats4.Position = UDim2.new(-0.00233849813, 0, -0.000636827084, 0)
+Stats4.Size = UDim2.new(0, 159, 0, 37)
+Stats4.Font = Enum.Font.SourceSansBold
+Stats4.Text = ""
+Stats4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stats4.TextScaled = true
+Stats4.TextSize = 14.000
+Stats4.TextWrapped = true
+
+Mob_Status.Name = "Mob_Status"
+Mob_Status.Parent = Stats2
+Mob_Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mob_Status.BackgroundTransparency = 1.000
+Mob_Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mob_Status.BorderSizePixel = 0
+Mob_Status.Position = UDim2.new(-0.00233840942, 0, 0.148515701, 0)
+Mob_Status.Size = UDim2.new(0, 159, 0, 37)
+Mob_Status.Font = Enum.Font.SourceSansBold
+Mob_Status.Text = "..."
+Mob_Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mob_Status.TextScaled = true
+Mob_Status.TextSize = 14.000
+Mob_Status.TextWrapped = true
+
+-- Scripts:
+
+local function NASJ_fake_script() -- Home.Homerun 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.AutoParry.Visible = false
+		script.Parent.Parent.Parent.Clash.Visible = false
+		script.Parent.Parent.Parent.Home.Visible = true
+	end)
+end
+coroutine.wrap(NASJ_fake_script)()
+local function OKIGV_fake_script() -- Auto_Parry.Direct 
+	local script = Instance.new('LocalScript', Auto_Parry)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.AutoParry.Visible = true
+		script.Parent.Parent.Parent.Clash.Visible = false
+		script.Parent.Parent.Parent.Home.Visible = false
+	end)
+end
+coroutine.wrap(OKIGV_fake_script)()
+local function KRDNX_fake_script() -- Clash.ClashDirect 
+	local script = Instance.new('LocalScript', Clash)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.AutoParry.Visible = false
+		script.Parent.Parent.Parent.Clash.Visible = true
+		script.Parent.Parent.Parent.Home.Visible = false
+	end)
+end
+coroutine.wrap(KRDNX_fake_script)()
+local function CIFMTK_fake_script() -- Auto_Parry_Code.Working 
+	local script = Instance.new('LocalScript', Auto_Parry_Code)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Status.Stats.Text = "Press E to turn on or off the auto parry"
+		wait(5)
+	
+		local plr = game.Players.LocalPlayer
+		local char = plr.Character
+		local hrp = char.HumanoidRootPart
+	
+		_G.AutoParryActive = false
+	
+		local function PerformAutoParry()
+			while _G.AutoParryActive do
+				for i, v in pairs(game.Workspace.Balls:GetDescendants()) do
+					local ball = v
+					local Distance = (hrp.Position - ball.Position).magnitude
+					if Distance == 15 then
+						local args = {
+							[1] = 0.5,
+							[2] = CFrame.new(-192.02227783203125, 115.84951782226562, 34.14231491088867, 1, 0, 0, 0, 0.9659253358840942, 0.2588207721710205, 0, -0.2588207721710205, 0.9659253358840942),
+							[3] = {
+								-- Your Vector3 data here
+							},
+							[4] = {
+								[1] = 985,
+								[2] = 356
+							}
+						}
+	
+						game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+					end
+				end
+				task.wait()
+			end
+		end
+	
+		local function ToggleAutoParry()
+			_G.AutoParryActive = not _G.AutoParryActive
+			if _G.AutoParryActive then
+				script.Parent.Parent.Status.Stats.Text = "Auto Parry is active"
+				PerformAutoParry()
+			else
+				script.Parent.Parent.Status.Stats.Text = "Auto Parry is unactive"
+			end
+		end
+	
+		game:GetService("UserInputService").InputBegan:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.E then
+				ToggleAutoParry()
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(CIFMTK_fake_script)()
+local function KDWH_fake_script() -- Pc_Clash.Clash 
+	local script = Instance.new('LocalScript', Pc_Clash)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	_G.AutoParryActive = false
+	
+	local function PerformAutoParry()
+		while _G.AutoParryActive do
+			local args = {
+				[1] = 0.5,
+				[2] = CFrame.new(-192.02227783203125, 115.84951782226562, 34.14231491088867, 1, 0, 0, 0, 0.9659253358840942, 0.2588207721710205, 0, -0.2588207721710205, 0.9659253358840942),
+				[3] = {
+					["1560239159"] = Vector3.new(-886.80078125, 311.3323974609375, 75.83000946044922),
+					
+				},
+				[4] = {
+					[1] = 985,
+					[2] = 356
+				}
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+			
+		end
+	end
+	
+	local function ToggleAutoParry()
+		_G.AutoParryActive = not _G.AutoParryActive
+		if _G.AutoParryActive then
+			script.Parent.Parent.Stats2.Stats4.Text = "Clash is active"
+			PerformAutoParry()
+		else
+			script.Parent.Parent.Stats2.Stats4.Text = "Clash is unactive"
+		end
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.C then
+			ToggleAutoParry()
+		end
+	end)
+	end)
+end
+coroutine.wrap(KDWH_fake_script)()
+local function BVOURS_fake_script() -- Mob_Clash.MobileClash 
+	local script = Instance.new('LocalScript', Mob_Clash)
+
+	-- Gui to Lua
+	-- Version: 3.2
+	
+	-- Instances:
+	
+	local Mob_Clash = Instance.new("ScreenGui")
+	local Clash = Instance.new("Frame")
+	local ClashedOn = Instance.new("TextButton")
+	
+	--Properties:
+	
+	Mob_Clash.Name = "Mob_Clash"
+	Mob_Clash.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	Mob_Clash.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	Mob_Clash.Active = true
+	Mob_Clash.Draggable = true
+	
+	
+	Clash.Name = "Clash"
+	Clash.Parent = Mob_Clash
+	Clash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Clash.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	Clash.BorderSizePixel = 0
+	Clash.Position = UDim2.new(0.444966435, 0, 0.366583556, 0)
+	Clash.Size = UDim2.new(0, 100, 0, 100)
+	
+	ClashedOn.Name = "ClashedOn"
+	ClashedOn.Parent = Clash
+	ClashedOn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ClashedOn.BackgroundTransparency = 1.000
+	ClashedOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ClashedOn.BorderSizePixel = 0
+	ClashedOn.Position = UDim2.new(0.109999999, 0, 0.25, 0)
+	ClashedOn.Size = UDim2.new(0, 78, 0, 50)
+	ClashedOn.Font = Enum.Font.SourceSansBold
+	ClashedOn.Text = "E"
+	ClashedOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ClashedOn.TextScaled = true
+	ClashedOn.TextSize = 14.000
+	ClashedOn.TextWrapped = true
+	
+	-- Scripts:
+	
+	local function CKSRWZ_fake_script() -- ClashedOn.Hah 
+		local script = Instance.new('LocalScript', ClashedOn)
+	
+		_G.AutoParryActive = false
+	
+	
+		local function PerformAutoParry()
+			while _G.AutoParryActive do
+				local args = {
+					[1] = 0.5,
+					[2] = CFrame.new(-192.02227783203125, 115.84951782226562, 34.14231491088867, 1, 0, 0, 0, 0.9659253358840942, 0.2588207721710205, 0, -0.2588207721710205, 0.9659253358840942),
+					[3] = {
+						["1560239159"] = Vector3.new(-886.80078125, 311.3323974609375, 75.83000946044922),
+	
+					},
+					[4] = {
+						[1] = 985,
+						[2] = 356
+					}
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+				task.wait()
+			end
+		end
+	
+		local function ToggleAutoParry()
+			_G.AutoParryActive = not _G.AutoParryActive
+			if _G.AutoParryActive then
+				PerformAutoParry()
+			end
+		end
+	
+		-- Define a button variable and connect the click event
+		local button = script.Parent -- Replace this with the actual button
+		button.MouseButton1Click:Connect(function()
+			ToggleAutoParry()
+		end)
+	end
+	coroutine.wrap(CKSRWZ_fake_script)()
+	
+end
+coroutine.wrap(BVOURS_fake_script)()
