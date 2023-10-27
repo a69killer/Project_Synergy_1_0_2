@@ -78,8 +78,8 @@ local Mob_Status = Instance.new("TextLabel")
 
 Main.Name = "Main"
 Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Mob_Clash.Active = true
-Mob_Clash.Draggable = true
+Main.Active = true
+Main.Draggable = true
 
 _102.Name = "1.0.2"
 _102.Parent = Main
